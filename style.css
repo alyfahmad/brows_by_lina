@@ -182,20 +182,21 @@ form input:not([type="submit"]), form textarea { padding: 20px 20px; background:
 .gallery-item figure .gallery-title { margin: 0; font-size: 14px; font-size: 0.875rem; font-family: "Novecento Sans", "Open Sans", sans-serif; text-transform: uppercase; color: white; font-weight: 400; }
 .gallery-item figure p { font-size: 14px; font-size: 0.875rem; margin: 0; }
 
-.contact-form { margin-bottom: 50px; *zoom: 1; }
-.contact-form:after { content: " "; clear: both; display: block; overflow: hidden; height: 0; }
-.contact-form input:not([type="submit"]), .contact-form textarea { background-repeat: no-repeat !important; background-position: 10px center; padding: 15px 15px 15px 40px; width: 100%; margin-bottom: 10px; color: white; outline: none; -webkit-transition: .3s ease; transition: .3s ease; }
-.contact-form input:not([type="submit"]):hover, .contact-form input:not([type="submit"]):active, .contact-form input:not([type="submit"]):focus, .contact-form textarea:hover, .contact-form textarea:active, .contact-form textarea:focus { border-color: #cc7250; }
-.contact-form textarea { background-position: 10px 15px; }
-.contact-form #from_name { background-image: url("images/icon-contact-user.png"); }
+#contact-form { margin-bottom: 50px; *zoom: 1; }
+#contact-form:after { content: " "; clear: both; display: block; overflow: hidden; height: 0; }
+#contact-form input:not([type="submit"]), .contact-form textarea { background-repeat: no-repeat !important; background-position: 10px center; padding: 15px 15px 15px 40px; width: 100%; margin-bottom: 10px; color: white; outline: none; -webkit-transition: .3s ease; transition: .3s ease; }
+#contact-form input:not([type="submit"]):hover, .contact-form input:not([type="submit"]):active, .contact-form input:not([type="submit"]):focus, .contact-form textarea:hover, .contact-form textarea:active, .contact-form textarea:focus { border-color: #cc7250; }
+#contact-form textarea { background-position: 10px 15px; }
+#contact-form #from_name { background-image: url("images/icon-contact-user.png"); }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) { .contact-form #name { background-image: url("images/icon-contact-user@2x.png"); background-size: 16px 18px; } }
-.contact-form #email { background-image: url("images/icon-contact-envelope.png"); }
+#contact-form #email { background-image: url("images/icon-contact-envelope.png"); }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) { .contact-form #email { background-image: url("images/icon-contact-envelope@2x.png"); background-size: 16px 11px; } }
-.contact-form #phone { background-image: url("images/icon-contact-phone.png"); }
+#contact-form #phone { background-image: url("images/icon-contact-phone.png"); }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) { .contact-form #website { background-image: url("images/icon-contact-phone@2x.png"); background-size: 16px 16px; } }
-.contact-form #message { background-image: url("images/icon-contact-pencil.png"); min-height: 200px; }
+#contact-form #message { background-image: url("images/icon-contact-pencil.png"); min-height: 200px; }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) { .contact-form #message { background-image: url("images/icon-contact-pencil@2x.png"); background-size: 16px 17px; } }
-.contact-form button { background: none; float: right; }
+/* .contact-form button { background: none; float: right; } */
+#contact-form input[type="submit"] { background: none; float: right; }
 
 .map { min-height: 350px; }
 
