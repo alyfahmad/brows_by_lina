@@ -326,7 +326,7 @@ form textarea {
   background-size: cover;
   min-height: 860px;
   background-position: center center;
-  padding-top: 200px;
+  padding-top: 20vh;
 }
 .hero-slider .slides .review-list {
   /* margin-right: -100%; */
@@ -372,6 +372,7 @@ form textarea {
 .hero-slider .slides .home-list p {
   width: 100%;
   margin-bottom: 50px;
+  font-family: "Novecento Sans", "Open Sans", sans-serif;
 }
 .hero-slider .slides a {
   text-align: center;
@@ -2375,6 +2376,16 @@ form textarea {
   }
 }
 /* Header Styles */
+.site-header-black {
+  transition: all 1s;
+  background-color: #1b181b;
+}
+
+.site-header-transparent {
+  transition: all 1s ease-out;
+  background-color: transparent;
+}
+
 .site-header {
   z-index: 999;
   *zoom: 1;
@@ -2387,7 +2398,7 @@ form textarea {
   height: 0;
 }
 .site-header .container {
-  padding: 10px 0;
+  padding: 4px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   *zoom: 1;
 }
@@ -2397,12 +2408,6 @@ form textarea {
   display: block;
   overflow: hidden;
   height: 0;
-}
-.header-collapse .site-header {
-  position: absolute;
-  left: 100;
-  width: 100%;
-  top: 0;
 }
 
 #branding {
@@ -2447,14 +2452,35 @@ form textarea {
   display: none;
   outline: none;
 }
+
 @media screen and (max-width: 990px) {
   .main-navigation .menu-toggle {
     display: block;
+    position: absolute;
+    padding-top: 2vh;
+    /* position: fixed;
+    padding-top: 2vh; */
+  }
+  .site-header {
+    position: fixed;
+  }
+  .main-content {
+    padding-top: 5vh;
   }
 }
 @media screen and (min-width: 991px) {
   .main-navigation .menu-toggle {
     display: none !important;
+  }
+  .site-header {
+    position: fixed;
+    /* left: 100; */
+    width: 100%;
+    /* top: 0; */
+    /* background-color: black; */
+  }
+  .main-content {
+    padding-top: 10vh;
   }
 }
 .main-navigation .menu {
@@ -2519,7 +2545,7 @@ form textarea {
   list-style: none;
   padding-left: 0;
   margin: 0;
-  background: #151215;
+  background: transparent;
 }
 .mobile-navigation .menu-item {
   text-align: center;
